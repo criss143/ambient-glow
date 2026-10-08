@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <div>
+      <h1>Ambient Glow</h1>
+      <p class="sub">Dev <b>@Itzcrissxit</b></p>
+    </div>
+    <label class="switch big" title="Encender / apagar todo">
+      <input type="checkbox" id="enabled"><span></span>
+    </label>
+  </header>
+
+  <section class="site">
+    <span id="host">esta página</span>
+    <label class="switch"><input type="checkbox" id="siteOn"><span></span></label>
+  </section>
+
+  <section class="sync">
+    <button id="syncBtn" class="primary">🎵 Usar los colores de esta pestaña en todas</button>
+    <p id="syncStatus" class="hint left">Abre un video (YouTube, Twitch…), pulsa el botón y cambia de pestaña: todas se iluminarán con sus colores.</p>
+  </section>
+
+  <section class="sliders">
+    <h2>General (todas las pestañas)</h2>
+    <div class="row"><label for="intensity">Intensidad</label><output></output><input type="range" id="intensity" min="10" max="100"></div>
+    <div class="row"><label for="blur">Desenfoque</label><output></output><input type="range" id="blur" min="10" max="150"></div>
+    <div class="row"><label for="saturation">Saturación</label><output></output><input type="range" id="saturation" min="50" max="250"></div>
+    <div class="row"><label for="brightness">Brillo</label><output></output><input type="range" id="brightness" min="50" max="200"></div>
+    <h2>Colores del video en otras pestañas</h2>
+    <div class="row"><label for="syncGlow">Fuerza del brillo</label><output></output><input type="range" id="syncGlow" min="0" max="100"></div>
+    <h2>Páginas que tienen video</h2>
+    <div class="row"><label for="spread">Tamaño alrededor del video</label><output></output><input type="range" id="spread" min="5" max="100"></div>
+    <div class="row"><label for="pageGlow">Brillo en toda la página</label><output></output><input type="range" id="pageGlow" min="0" max="100"></div>
+    <div class="row"><label for="dim">Oscurecer página</label><output></output><input type="range" id="dim" min="0" max="90"></div>
+    <div class="row"><label for="fps">FPS del efecto</label><output></output><input type="range" id="fps" min="5" max="60"></div>
+    <h2>Páginas sin video (sin sincronizar)</h2>
+    <div class="row"><label for="idleGlow">Brillo RGB</label><output></output><input type="range" id="idleGlow" min="0" max="100"></div>
+  </section>
+
+  <section class="opts">
+    <label class="check"><span>Modo luz (mejor en páginas oscuras)</span>
+      <label class="switch"><input type="checkbox" id="blendScreen"><span></span></label></label>
+    <label class="check"><span>Saltar YouTube (usa su extensión)</span>
+      <label class="switch"><input type="checkbox" id="skipYouTube"><span></span></label></label>
+  </section>
+
+  <footer>
+    <button id="reset">Restablecer</button>
+    <span class="hint">Netflix/Disney+ bloquean el efecto (DRM)</span>
+  </footer>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
