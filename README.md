@@ -6,7 +6,7 @@
 
 **Luz ambiental para todo Chrome.** El color de tu video ilumina todas tus pestañas.
 
-![version](https://img.shields.io/badge/versión-1.7.0-a78bfa) ![chrome](https://img.shields.io/badge/Chrome-MV3-22d3ee) ![license](https://img.shields.io/badge/licencia-MIT-f472b6)
+![version](https://img.shields.io/badge/versión-1.8.0-a78bfa) ![chrome](https://img.shields.io/badge/Chrome-MV3-22d3ee) ![license](https://img.shields.io/badge/licencia-MIT-f472b6)
 
 Dev **[@Itzcrissxit](https://itzcrissxit.com)**
 
