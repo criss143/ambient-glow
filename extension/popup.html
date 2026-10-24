@@ -9,7 +9,7 @@
     <div class="logo"></div>
     <div>
       <h1>Ambient Glow</h1>
-      <p class="sub">Dev <b>@Itzcrissxit</b></p>
+      <p class="sub">v<span id="ver"></span></p>
     </div>
     <label class="switch big" title="Encender / apagar todo">
       <input type="checkbox" id="enabled"><span></span>
@@ -24,6 +24,17 @@
   <section class="sync">
     <button id="syncBtn" class="primary">🎵 Usar los colores de esta pestaña en todas</button>
     <p id="syncStatus" class="hint left">Abre un video (YouTube, Twitch…), pulsa el botón y cambia de pestaña: todas se iluminarán con sus colores.</p>
+  </section>
+
+  <section class="preview-box">
+    <div id="preview" class="preview"><canvas id="pv" width="16" height="9"></canvas><span>Vista previa</span></div>
+    <div class="presets">
+      <button data-preset="suave">Suave</button>
+      <button data-preset="normal">Normal</button>
+      <button data-preset="intenso">Intenso</button>
+      <button data-preset="max">Máximo</button>
+    </div>
+    <p id="ytNote" class="note" hidden>En YouTube el brillo lo pone la otra extensión. Los cambios se ven aquí arriba y en tus otras pestañas.</p>
   </section>
 
   <section class="sliders">
@@ -52,7 +63,7 @@
 
   <footer>
     <button id="reset">Restablecer</button>
-    <span class="hint">Netflix/Disney+ bloquean el efecto (DRM)</span>
+    <span class="dev">Dev: <b>@itzcrissxit</b></span>
   </footer>
   <script src="defaults.js"></script>
   <script src="popup.js"></script>

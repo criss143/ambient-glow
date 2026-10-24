@@ -36,3 +36,13 @@ button.primary.on{background:linear-gradient(90deg,#f43f5e,#7c3aed)}
 .sliders h2{font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#a78bfa;margin:12px 0 2px}
 .sliders h2:first-child{margin-top:2px}
 .row label{user-select:none}
+.preview-box{display:flex;flex-direction:column;gap:8px}
+.preview{position:relative;height:74px;border-radius:10px;overflow:hidden;background:#05050b;border:1px solid var(--line)}
+.preview canvas{position:absolute;inset:-30%;width:160%;height:160%;mix-blend-mode:screen;transition:opacity .2s}
+.preview span{position:absolute;left:10px;bottom:7px;font-size:10.5px;color:#ffffffcc;text-shadow:0 1px 3px #000;letter-spacing:.4px}
+.presets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.presets button{padding:6px 0;font-size:11.5px;border-radius:8px}
+.presets button.on{border-color:var(--a1);background:#2a1f4a}
+.note{font-size:10.5px;color:#fcd34d;background:#3b2f0a66;border:1px solid #fcd34d33;border-radius:8px;padding:6px 8px}
+.note[hidden]{display:none}
+.dev{font-size:11.5px;color:var(--mut)}.dev b{color:#c4b5fd;font-weight:600}
